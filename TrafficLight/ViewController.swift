@@ -20,7 +20,7 @@ final class ViewController: UIViewController {
         redCircleView.layer.cornerRadius = redCircleView.frame.height / 2
         yellowCircleView.layer.cornerRadius = yellowCircleView.frame.height / 2
         greenCircleView.layer.cornerRadius = greenCircleView.frame.height / 2
-        startButton.layer.cornerRadius = 10
+        startButton.layer.cornerRadius = 15
     }
     
     @IBAction func startButtonDidTapped() {
