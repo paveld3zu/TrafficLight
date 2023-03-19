@@ -7,8 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-    
+final class ViewController: UIViewController {
     
     @IBOutlet var redCircleView: UIView!
     @IBOutlet var yellowCircleView: UIView!
@@ -18,14 +17,14 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        redCircleView.layer.cornerRadius = 70
-        yellowCircleView.layer.cornerRadius = 70
-        greenCircleView.layer.cornerRadius = 70
+        redCircleView.layer.cornerRadius = redCircleView.frame.height / 2
+        yellowCircleView.layer.cornerRadius = yellowCircleView.frame.height / 2
+        greenCircleView.layer.cornerRadius = greenCircleView.frame.height / 2
         startButton.layer.cornerRadius = 10
     }
     
     @IBAction func startButtonDidTapped() {
-        startButton.setTitle("Next", for: .normal)
+        startButton.setTitle("NEXT", for: .normal)
         
         if redCircleView.alpha == yellowCircleView.alpha {
             redCircleView.alpha = 1
